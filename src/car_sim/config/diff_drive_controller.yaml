@@ -1,0 +1,9 @@
+diff_drive_controller:
+  type: diff_drive_controller/DiffDriveController
+  ros__parameters:
+    left_wheel_names: ["rear_left_wheel_joint"]
+    right_wheel_names: ["rear_right_wheel_joint"]
+    wheel_separation: 0.5  # adjust as needed
+    wheel_radius: 0.1      # match wheel size
+    base_frame_id: base_link
+    use_stamped_vel: false

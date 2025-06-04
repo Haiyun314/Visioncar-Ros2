@@ -1,0 +1,3 @@
+[console_scripts]
+spawn_car = car_sim.spawn_car:main
+
