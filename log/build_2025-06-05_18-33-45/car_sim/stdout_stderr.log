@@ -37,7 +37,8 @@ creating /home/parallels/ros2_ws_car/install/car_sim/share/car_sim/urdf
 copying urdf/car.urdf -> /home/parallels/ros2_ws_car/install/car_sim/share/car_sim/urdf
 creating /home/parallels/ros2_ws_car/install/car_sim/share/car_sim/world
 copying world/car_world.sdf -> /home/parallels/ros2_ws_car/install/car_sim/share/car_sim/world
-copying world/car.sdf -> /home/parallels/ros2_ws_car/install/car_sim/share/car_sim/world
+creating /home/parallels/ros2_ws_car/install/car_sim/share/car_sim/config
+copying config/diff_drive_controller.yaml -> /home/parallels/ros2_ws_car/install/car_sim/share/car_sim/config
 running install_egg_info
 Copying ../../build/car_sim/car_sim.egg-info to /home/parallels/ros2_ws_car/install/car_sim/lib/python3.10/site-packages/car_sim-0.0.0-py3.10.egg-info
 running install_scripts

@@ -22,7 +22,7 @@ class SpawnUrdfNode(Node):
         req.entity_factory.sdf = urdf_xml
         req.entity_factory.pose.position.x = 0.0
         req.entity_factory.pose.position.y = 0.0
-        req.entity_factory.pose.position.z = 0.0
+        req.entity_factory.pose.position.z = 1.0
         req.entity_factory.pose.orientation.x = 0.0
         req.entity_factory.pose.orientation.y = 0.0
         req.entity_factory.pose.orientation.z = 0.0

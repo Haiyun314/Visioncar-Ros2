@@ -1,9 +1,11 @@
-from launch import LaunchDescription
-from launch_ros.actions import Node
-from launch.actions import IncludeLaunchDescription, TimerAction
-from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python.packages import get_package_share_directory
 import os
+from launch import LaunchDescription
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.substitutions import PathJoinSubstitution
+from launch_ros.actions import Node
+from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
@@ -22,6 +24,36 @@ def generate_launch_description():
         launch_arguments={'gz_args': f'-r {world_path}'}.items()
     )
 
+    robot_controllers = PathJoinSubstitution(
+        [
+            FindPackageShare('car_sim'),
+            'config',
+            'diff_drive_controller.yaml',
+        ]
+    )
+
+    joint_state_broadcaster_spawner = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=[
+            'joint_state_broadcaster',
+            '--param-file',
+            robot_controllers,
+            ],
+    )
+
+    car_controller_spawner = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=[
+            'diff_drive_controller',
+            '--param-file',
+            robot_controllers,
+            ],
+    )
+
+
+
     return LaunchDescription([
         gz_sim_launch,
 
@@ -37,16 +69,13 @@ def generate_launch_description():
             output='screen'
         ),
 
-        TimerAction(
-            period=5.0,
-            actions=[
-                Node(
-                    package='car_sim',
-                    executable='spawn_car',
-                    output='screen',
-                )
-            ]
+        Node(
+            package='car_sim',
+            executable='spawn_car',
+            output='screen',
         ),
+
+        joint_state_broadcaster_spawner,
 
         Node(
             package='robot_state_publisher',
@@ -54,4 +83,6 @@ def generate_launch_description():
             arguments=[urdf_path],
             output='screen'
         ),
+
+        car_controller_spawner
     ])

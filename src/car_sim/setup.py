@@ -13,7 +13,9 @@ setup(
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'launch'), glob('launch/*.py')),
         (os.path.join('share', package_name, 'urdf'), glob('urdf/*.urdf')),
-        (os.path.join('share', package_name, 'world'), glob('world/*.sdf')),  # added
+        (os.path.join('share', package_name, 'world'), glob('world/*.sdf')),  
+        (os.path.join('share', package_name, 'config'), glob('config/*.yaml')), 
+
     ],
     install_requires=['setuptools'],
     zip_safe=True,

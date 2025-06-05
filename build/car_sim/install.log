@@ -9,7 +9,7 @@
 /home/parallels/ros2_ws_car/install/car_sim/share/car_sim/launch/car_sim.launch.py
 /home/parallels/ros2_ws_car/install/car_sim/share/car_sim/urdf/car.urdf
 /home/parallels/ros2_ws_car/install/car_sim/share/car_sim/world/car_world.sdf
-/home/parallels/ros2_ws_car/install/car_sim/share/car_sim/world/car.sdf
+/home/parallels/ros2_ws_car/install/car_sim/share/car_sim/config/diff_drive_controller.yaml
 /home/parallels/ros2_ws_car/install/car_sim/lib/python3.10/site-packages/car_sim-0.0.0-py3.10.egg-info/dependency_links.txt
 /home/parallels/ros2_ws_car/install/car_sim/lib/python3.10/site-packages/car_sim-0.0.0-py3.10.egg-info/top_level.txt
 /home/parallels/ros2_ws_car/install/car_sim/lib/python3.10/site-packages/car_sim-0.0.0-py3.10.egg-info/entry_points.txt
