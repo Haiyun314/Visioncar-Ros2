@@ -64,7 +64,7 @@ def generate_launch_description():
                 '/world/car_world/create@ros_gz_interfaces/srv/SpawnEntity',
                 '/world/car_world/remove@ros_gz_interfaces/srv/DeleteEntity',
                 '/world/car_world/set_pose@ros_gz_interfaces/srv/SetEntityPose',
-                '/clock@rosgraph_msgs/msg/Clock@gz.msgs.Clock',
+                '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
                 '/gps@sensor_msgs/msg/NavSatFix@ignition.msgs.NavSat',
                 '/camera/image_raw@sensor_msgs/msg/Image@ignition.msgs.Image',
                 '/camera/camera_info@sensor_msgs/msg/CameraInfo@ignition.msgs.CameraInfo',
