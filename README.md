@@ -33,6 +33,6 @@ Enable the robot to:
 
 ## References
 - https://control.ros.org/humble/doc/gz_ros2_control/doc/index.html#ign-ros2-control
-
+- https://gazebosim.org/libs/sensors/
 
 Feel free to customize further with installation and usage instructions.

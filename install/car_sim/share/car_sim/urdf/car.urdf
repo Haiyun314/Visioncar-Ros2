@@ -25,7 +25,7 @@
     </inertial>
   </link>
 
-  <!-- Rear Wheels -->
+  <!-- Link Wheels -->
   <link name="rear_left_wheel">
     <visual>
       <geometry>
@@ -87,7 +87,6 @@
     </inertial>
   </link>
 
-  <!-- Front Wheels -->
   <link name="front_left_wheel">
     <visual>
       <geometry>
@@ -151,7 +150,7 @@
   </link>
 
 
-  <!-- Camera -->
+  <!-- Link Sensors -->
   <link name="camera_link">
     <visual>
       <geometry>
@@ -174,7 +173,6 @@
     </inertial>
   </link>
 
-  <!-- GPS -->
   <link name="gps_link">
     <visual>
       <geometry>
@@ -187,7 +185,7 @@
     </visual>
   </link>
 
-  <!-- Joints -->
+  <!-- Joints Wheel-->
   <joint name="rear_left_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="rear_left_wheel"/>
@@ -202,8 +200,7 @@
     <axis xyz="0 1 0"/>
   </joint>
 
-
-  <!-- Joints for front wheels -->
+ 
   <joint name="front_left_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="front_left_wheel"/>
@@ -219,7 +216,7 @@
   </joint>
 
 
-
+ <!-- Joints for Sensors -->
   <joint name="camera_joint" type="fixed">
     <parent link="base_link"/>
     <child link="camera_link"/>
@@ -256,7 +253,6 @@
     </plugin>
   </gazebo>
 
-
   <!-- Ignition native camera sensor -->
   <gazebo reference="camera_link">
     <sensor name="camera" type="camera">
@@ -276,16 +272,18 @@
       <always_on>true</always_on>
       <update_rate>30.0</update_rate>
       <visualize>true</visualize>
+      <topic>camera/image_raw</topic>
     </sensor>
   </gazebo>
 
   <!-- Ignition native GPS sensor -->
   <gazebo reference="gps_link">
-    <sensor name="gps" type="gps">
+    <sensor name="gps" type="navsat">
       <pose>0 0 0 0 0 0</pose>
       <always_on>true</always_on>
       <update_rate>5</update_rate>
+      <topic>/gps</topic>
     </sensor>
-  </gazebo>
+  </gazebo> 
 
 </robot>
