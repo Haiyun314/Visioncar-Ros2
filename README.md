@@ -3,6 +3,13 @@
 **VisionCar-ROS2** is a ROS 2-based simulation of a 4-wheeled car that uses a front camera to follow a visual path and avoid moving objects in Gazebo.
 <img src="./images/sim_car_running.gif" alt="Alt text" width="600" height="400"/>
 
+## Progress
+
+- Car_sim enviroment -- Done
+- spawn_car with script -- Done
+- Control car with command line -- Done
+- Control car with script -- Done
+- Control car with Pid or DRL -- In Progress
 
 ## Features
 
@@ -32,7 +39,6 @@ Enable the robot to:
 
 - Implement PPO-based control
 - Add more complex environments
-- Improve sensor fusion and perception
 
 ## Requirements
 
