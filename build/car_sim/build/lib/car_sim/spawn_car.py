@@ -12,7 +12,7 @@ class SpawnUrdfNode(Node):
             self.get_logger().info('Waiting for /world/car_world/create service...')
         
         # Load URDF XML from file
-        urdf_file = '/home/parallels/ros2_ws_car/src/car_sim/urdf/car.urdf'  # CHANGE THIS PATH
+        urdf_file = '/home/parallels/ros2_ws_car/src/car_sim/urdf/car.urdf' 
         with open(urdf_file, 'r') as file:
             urdf_xml = file.read()
 

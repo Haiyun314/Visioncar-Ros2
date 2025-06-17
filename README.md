@@ -11,6 +11,14 @@
 - Publishes and subscribes to standard ROS 2 topics
 - Prepares for reinforcement learning integration using PPO (Proximal Policy Optimization)
 
+## Test
+```bash
+source auto_build.bash
+
+ros2 topic pub --rate 10 /diff_drive_controller/cmd_vel_unstamped geometry_msgs/msg/Twist '{linear: {x: -1.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}'
+
+```
+
 ## Goal
 
 Enable the robot to:

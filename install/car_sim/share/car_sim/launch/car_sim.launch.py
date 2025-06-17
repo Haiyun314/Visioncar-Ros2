@@ -52,8 +52,6 @@ def generate_launch_description():
             ],
     )
 
-
-
     return LaunchDescription([
         gz_sim_launch,
 
@@ -77,6 +75,10 @@ def generate_launch_description():
             executable='spawn_car',
             output='screen',
         ),
+
+        Node(package='car_sim',
+             executable='controller',
+             output='screen'),
 
         joint_state_broadcaster_spawner,
 

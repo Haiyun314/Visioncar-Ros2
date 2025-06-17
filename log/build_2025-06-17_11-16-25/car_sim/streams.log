@@ -1,0 +1,49 @@
+[0.391s] Invoking command in '/home/parallels/ros2_ws_car/src/car_sim': PYTHONPATH=/home/parallels/ros2_ws_car/build/car_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws_car/install/car_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/car_sim build --build-base /home/parallels/ros2_ws_car/build/car_sim/build install --record /home/parallels/ros2_ws_car/build/car_sim/install.log --single-version-externally-managed install_data
+[0.512s] running egg_info
+[0.512s] creating ../../build/car_sim/car_sim.egg-info
+[0.512s] writing ../../build/car_sim/car_sim.egg-info/PKG-INFO
+[0.512s] writing dependency_links to ../../build/car_sim/car_sim.egg-info/dependency_links.txt
+[0.512s] writing entry points to ../../build/car_sim/car_sim.egg-info/entry_points.txt
+[0.512s] writing requirements to ../../build/car_sim/car_sim.egg-info/requires.txt
+[0.512s] writing top-level names to ../../build/car_sim/car_sim.egg-info/top_level.txt
+[0.512s] writing manifest file '../../build/car_sim/car_sim.egg-info/SOURCES.txt'
+[0.513s] reading manifest file '../../build/car_sim/car_sim.egg-info/SOURCES.txt'
+[0.514s] writing manifest file '../../build/car_sim/car_sim.egg-info/SOURCES.txt'
+[0.514s] running build
+[0.514s] running build_py
+[0.514s] creating /home/parallels/ros2_ws_car/build/car_sim/build
+[0.514s] creating /home/parallels/ros2_ws_car/build/car_sim/build/lib
+[0.514s] creating /home/parallels/ros2_ws_car/build/car_sim/build/lib/car_sim
+[0.514s] copying car_sim/controller.py -> /home/parallels/ros2_ws_car/build/car_sim/build/lib/car_sim
+[0.514s] copying car_sim/spawn_car.py -> /home/parallels/ros2_ws_car/build/car_sim/build/lib/car_sim
+[0.514s] copying car_sim/__init__.py -> /home/parallels/ros2_ws_car/build/car_sim/build/lib/car_sim
+[0.514s] running install
+[0.514s] running install_lib
+[0.515s] creating /home/parallels/ros2_ws_car/install/car_sim/lib/python3.10/site-packages/car_sim
+[0.515s] copying /home/parallels/ros2_ws_car/build/car_sim/build/lib/car_sim/controller.py -> /home/parallels/ros2_ws_car/install/car_sim/lib/python3.10/site-packages/car_sim
+[0.515s] copying /home/parallels/ros2_ws_car/build/car_sim/build/lib/car_sim/spawn_car.py -> /home/parallels/ros2_ws_car/install/car_sim/lib/python3.10/site-packages/car_sim
+[0.516s] copying /home/parallels/ros2_ws_car/build/car_sim/build/lib/car_sim/__init__.py -> /home/parallels/ros2_ws_car/install/car_sim/lib/python3.10/site-packages/car_sim
+[0.516s] byte-compiling /home/parallels/ros2_ws_car/install/car_sim/lib/python3.10/site-packages/car_sim/controller.py to controller.cpython-310.pyc
+[0.516s] byte-compiling /home/parallels/ros2_ws_car/install/car_sim/lib/python3.10/site-packages/car_sim/spawn_car.py to spawn_car.cpython-310.pyc
+[0.517s] byte-compiling /home/parallels/ros2_ws_car/install/car_sim/lib/python3.10/site-packages/car_sim/__init__.py to __init__.cpython-310.pyc
+[0.517s] running install_data
+[0.517s] creating /home/parallels/ros2_ws_car/install/car_sim/share/ament_index
+[0.517s] creating /home/parallels/ros2_ws_car/install/car_sim/share/ament_index/resource_index
+[0.517s] creating /home/parallels/ros2_ws_car/install/car_sim/share/ament_index/resource_index/packages
+[0.517s] copying resource/car_sim -> /home/parallels/ros2_ws_car/install/car_sim/share/ament_index/resource_index/packages
+[0.517s] copying package.xml -> /home/parallels/ros2_ws_car/install/car_sim/share/car_sim
+[0.517s] creating /home/parallels/ros2_ws_car/install/car_sim/share/car_sim/launch
+[0.517s] copying launch/car_sim.launch.py -> /home/parallels/ros2_ws_car/install/car_sim/share/car_sim/launch
+[0.517s] creating /home/parallels/ros2_ws_car/install/car_sim/share/car_sim/urdf
+[0.517s] copying urdf/car.urdf -> /home/parallels/ros2_ws_car/install/car_sim/share/car_sim/urdf
+[0.517s] creating /home/parallels/ros2_ws_car/install/car_sim/share/car_sim/world
+[0.517s] copying world/car_world.sdf -> /home/parallels/ros2_ws_car/install/car_sim/share/car_sim/world
+[0.518s] creating /home/parallels/ros2_ws_car/install/car_sim/share/car_sim/config
+[0.518s] copying config/diff_drive_controller.yaml -> /home/parallels/ros2_ws_car/install/car_sim/share/car_sim/config
+[0.518s] running install_egg_info
+[0.518s] Copying ../../build/car_sim/car_sim.egg-info to /home/parallels/ros2_ws_car/install/car_sim/lib/python3.10/site-packages/car_sim-0.0.0-py3.10.egg-info
+[0.519s] running install_scripts
+[0.531s] Installing controller script to /home/parallels/ros2_ws_car/install/car_sim/lib/car_sim
+[0.531s] Installing spawn_car script to /home/parallels/ros2_ws_car/install/car_sim/lib/car_sim
+[0.531s] writing list of installed files to '/home/parallels/ros2_ws_car/build/car_sim/install.log'
+[0.545s] Invoked command in '/home/parallels/ros2_ws_car/src/car_sim' returned '0': PYTHONPATH=/home/parallels/ros2_ws_car/build/car_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws_car/install/car_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/car_sim build --build-base /home/parallels/ros2_ws_car/build/car_sim/build install --record /home/parallels/ros2_ws_car/build/car_sim/install.log --single-version-externally-managed install_data

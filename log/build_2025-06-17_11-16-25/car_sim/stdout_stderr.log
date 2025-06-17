@@ -42,5 +42,6 @@ copying config/diff_drive_controller.yaml -> /home/parallels/ros2_ws_car/install
 running install_egg_info
 Copying ../../build/car_sim/car_sim.egg-info to /home/parallels/ros2_ws_car/install/car_sim/lib/python3.10/site-packages/car_sim-0.0.0-py3.10.egg-info
 running install_scripts
+Installing controller script to /home/parallels/ros2_ws_car/install/car_sim/lib/car_sim
 Installing spawn_car script to /home/parallels/ros2_ws_car/install/car_sim/lib/car_sim
 writing list of installed files to '/home/parallels/ros2_ws_car/build/car_sim/install.log'

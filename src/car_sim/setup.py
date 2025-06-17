@@ -28,6 +28,7 @@ setup(
         'console_scripts': [
             # Add Python nodes here if needed later
             'spawn_car = car_sim.spawn_car:main',
+            'controller = car_sim.controller:main',
         ],
     },
 )

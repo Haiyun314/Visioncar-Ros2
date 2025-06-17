@@ -1,3 +1,4 @@
 [console_scripts]
+controller = car_sim.controller:main
 spawn_car = car_sim.spawn_car:main
 
