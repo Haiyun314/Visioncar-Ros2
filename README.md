@@ -1,6 +1,8 @@
 # VisionCar-ROS2
 
 **VisionCar-ROS2** is a ROS 2-based simulation of a 4-wheeled car that uses a front camera to follow a visual path and avoid moving objects in Gazebo.
+<img src="./images/sim_car_running.gif" alt="Alt text" width="600" height="400"/>
+
 
 ## Features
 
